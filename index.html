@@ -34,7 +34,16 @@
         </li>
 
         <li>
-          <label for="vorname">html rhtml radio mdnme*</label>
+          <label for="vorname">Vorname*</label>
+          <input
+            required
+            id="vorname"
+            type="text"
+            placeholder="zb. Frederike oder Klaus"
+          />
+        </li>
+        <li>
+          <label for="nachname">Nachname*</label>
           <input
             required
             id="nachname"
@@ -43,8 +52,7 @@
           />
         </li>
         <li>
-          Web Development
-          <label for="vorname">E-Mail Adresse*</label>
+          <label for="mail">E-Mail Adresse*</label>
           <input
             required
             id="mail"
@@ -62,11 +70,11 @@
             </li>
             <li>
               <input type="checkbox" id="data-science" name="data-science" />
-              <label for="webdevopment">Data Science</label>
+              <label for="data-science">Data Science</label>
             </li>
             <li>
               <input type="checkbox" id="java" name="java" />
-              <label for="webdevopment">Java</label>
+              <label for="java">Java</label>
             </li>
             <li>
               <input
@@ -74,7 +82,7 @@
                 id="data-analytics"
                 name="data-analytics"
               />
-              <label for="webdevopment">Data Analytics</label>
+              <label for="data-analytics">Data Analytics</label>
             </li>
             <li>
               <input
@@ -82,7 +90,7 @@
                 id="cloud-development"
                 name="cloud-developmWeb Developmentent"
               />
-              <label for="webdevopment">Cloud Development</label>
+              <label for="cloud-development">Cloud Development</label>
             </li>
           </ul>
         </li>
@@ -91,7 +99,13 @@
           <label for="regions">Bevorzugt in der Region ...*</label>
           <ul id="regions">
             <li>
-              Web Development />
+              <input
+                required
+                type="radio"
+                name="regions"
+                id="region-hamburg"
+                value="hamburg"
+              />
               <label for="region-hamburg">Hamburg</label>
             </li>
             <li>
@@ -101,7 +115,7 @@
                 name="regions"
                 id="region-koeln"
                 value="koeln"
-              />Web Development
+              />
               <label for="region-koeln">Koeln</label>
             </li>
             <li>
@@ -122,6 +136,7 @@
               />
               <label for="region-frankfurt">Frankfurt</label>
             </li>
+
             <li>
               <input
                 type="radio"
@@ -138,11 +153,11 @@
           <label for="newsletter-conWeb Developmenttainer"></label>
           <div id="newsletter-container">
             <input type="checkbox" id="newsletter" name="newsletter" />
-            <label for="newsletter"
-              >Ich willige ein, dass ich per E-Mail zu Kursen, Startterminen
-              oder <strong>Aktionen</strong> von neuefische erhalten werde. Ich
-              kann diese Benachrichtigungen jderyeit abbestellen.</label
-            >
+            <label for="newsletter">
+              Ich willige ein, dass ich per E-Mail zu Kursen, Startterminen oder
+              <strong>Aktionen</strong> von neuefische erhalten werde. Ich kann
+              diese Benachrichtigungen jderyeit abbestellen.
+            </label>
           </div>
         </li>
       </ul>

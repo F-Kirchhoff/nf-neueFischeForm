@@ -12,117 +12,122 @@
       <span>in deine Digitale Zukunft</span>
     </h1>
     <form aria-labelledby="form-header" action="post">
-      <ul>
-        <li>
-          <label for="anrede-container">Anrede*</label>
-          <ul id="anrede-container">
-            <li>
-              <input type="radio" name="anrede" id="anrede-m" value="male" />
-              <label for="anrede-m">Mann</label>
-            </li>
-            <li>
-              <input type="radio" name="anrede" id="anrede-f" value="female" />
-              <label for="anrede-f">Frau</label>
-            </li>
-          </ul>
-        </li>
+      <fieldset>
+        <legend>Anrede*</legend>
+        <input
+          required
+          type="radio"
+          name="salutation"
+          id="salutation-m"
+          value="male"
+        />
+        <label for="saltuation-m">Mann</label>
+        <input
+          type="radio"
+          name="salutation"
+          id="salutation-f"
+          value="female"
+        />
+        <label for="anrede-f">Frau</label>
+      </fieldset>
 
-        <li>
-          <label for="vorname">Vorname*</label>
-          <input
-            id="vorname"
-            type="text"
-            placeholder="zb. Frederike oder Klaus"
-          />
-        </li>
-        <li>
-          <label for="vorname">Nachname*</label>
-          <input id="nachname" type="text" placeholder="zb. Mustermann" />
-        </li>
-        <li>
-          <label for="vorname">E-Mail Adresse*</label>
-          <input
-            id="mail"
-            type="mail"
-            placeholder="zb. frederike@mustermann.de"
-          />
-        </li>
+      <label for="vorname">Vorname*</label>
+      <input
+        required
+        id="vorname"
+        type="text"
+        placeholder="zb. Frederike oder Klaus"
+      />
 
-        <li>
-          <label for="interests">Ich interessiere mich fuer ...*</label>
-          <ul id="interests">
-            <li>
-              <input type="checkbox" id="webdevopment" />
-              <label for="webdevopment">Web Development</label>
-            </li>
-            <li>
-              <input type="checkbox" id="data-science" />
-              <label for="webdevopment">Web Development</label>
-            </li>
-            <li>
-              <input type="checkbox" id="java" />
-              <label for="webdevopment">Web Development</label>
-            </li>
-            <li>
-              <input type="checkbox" id="data-analytics" />
-              <label for="webdevopment">Web Development</label>
-            </li>
-            <li>
-              <input type="checkbox" id="cloud-development" />
-              <label for="webdevopment">Web Development</label>
-            </li>
-          </ul>
-        </li>
+      <label for="nachname">Nachname*</label>
+      <input required id="nachname" type="text" placeholder="zb. Mustermann" />
 
-        <label for="regions">Bevorzugt in der Region ...*</label>
-        <ul id="regions">
-          <li>
-            <input
-              type="radio"
-              name="regions"
-              id="region-hamburg"
-              value="hamburg"
-            />
-            <label for="region-hamburg">Hamburg</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="regions"
-              id="region-koeln"
-              value="koeln"
-            />
-            <label for="region-koeln">Koeln</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="regions"
-              id="region-muenchen"
-              value="muenchen"
-            />
-            <label for="region-muenchen">Muenchen</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="regions"
-              id="region-frankfurt"
-              value="frankfurt"
-            />
-            <label for="region-frankfurt">Frankfurt</label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="regions"
-              id="region-remote"
-              value="remote"
-            />
-            <label for="region-remote">remote</label>
-          </li>
-        </ul>
-      </ul>
+      <label for="mail">E-Mail Adresse*</label>
+      <input
+        required
+        id="mail"
+        type="mail"
+        placeholder="zb. frederike@mustermann.de"
+      />
+
+      <fieldset>
+        <legend>Ich interessiere mich fuer ...*</legend>
+
+        <input type="checkbox" id="webdevopment" name="webdevelopment" />
+        <label for="webdevopment">Web Development</label>
+
+        <input type="checkbox" id="data-science" name="data-science" />
+        <label for="data-science">Data Science</label>
+
+        <input type="checkbox" id="java" name="java" />
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="data-analytics" name="data-analytics" />
+        <label for="data-analytics">Data Analytics</label>
+
+        <input
+          type="checkbox"
+          id="cloud-development"
+          name="cloud-development"
+        />
+        <label for="cloud-development">Cloud Development</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bevorzugt in der Region ...*</legend>
+        <input
+          required
+          type="radio"
+          name="regions"
+          id="region-hamburg"
+          value="hamburg"
+        />
+        <label for="region-hamburg">Hamburg</label>
+
+        <input
+          required
+          type="radio"
+          name="regions"
+          id="region-koeln"
+          value="koeln"
+        />
+        <label for="region-koeln">Koeln</label>
+
+        <input
+          type="radio"
+          name="regions"
+          id="region-muenchen"
+          value="muenchen"
+        />
+        <label for="region-muenchen">Muenchen</label>
+
+        <input
+          type="radio"
+          name="regions"
+          id="region-frankfurt"
+          value="frankfurt"
+        />
+        <label for="region-frankfurt">Frankfurt</label>
+
+        <input type="radio" name="regions" id="region-remote" value="remote" />
+        <label for="region-remote">remote</label>
+      </fieldset>
+
+      <label for="newsletter-container"></label>
+      <div id="newsletter-container">
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter">
+          Ich willige ein, dass ich per E-Mail zu Kursen, Startterminen oder
+          <strong>Aktionen</strong> von neuefische erhalten werde. Ich kann
+          diese Benachrichtigungen jderyeit abbestellen.
+        </label>
+      </div>
+      <p>
+        Mit dem Absenden des Formulars erklaere ich mich mit der
+        <a href="#">Datenschutzerklaerung</a> von neuefische einverstanden.
+      </p>
+      <button>Jetzt Informationen anfordern</button>
     </form>
+    <p>Bitte fuelle alle Pflichtfelder (*) aus</p>
   </body>
 </html>
